@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <form action="" class="container w-50 my-5" method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="content">Add Question</label>
+      <textarea class="form-control" id="content" name="content" rows="5" placeholder="remain your question"></textarea>
+      <input class="btn btn-danger my-3" type="submit" value="Add">
+    </div>
+    
+  </form>
+
+{% endblock %}

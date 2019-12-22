@@ -1,6 +1,6 @@
-# Fake asked.fm with Django!
+# README
 
-### Using bootstrap examples
+## Using bootstrap examples
 
 - AWESOME examples in bootstrap!
 

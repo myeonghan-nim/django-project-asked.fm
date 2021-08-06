@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/python,django,windows,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=python,django,windows,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/python,windows,visualstudiocode,django
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,windows,visualstudiocode,django
 
 ### Django ###
 *.log
@@ -38,7 +38,6 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -65,11 +64,19 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+*.py,cover
 .hypothesis/
 .pytest_cache/
+cover/
 
 # Translations
 *.mo
+
+# Django stuff:
+
+# Flask stuff:
+instance/
+.webassets-cache
 
 # Scrapy stuff:
 .scrapy
@@ -78,10 +85,20 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
+.pybuilder/
 target/
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
 # pyenv
-.python-version
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -90,11 +107,24 @@ target/
 #   install all needed dependencies.
 #Pipfile.lock
 
-# celery beat schedule file
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
 celerybeat-schedule
+celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -102,11 +132,6 @@ celerybeat-schedule
 
 # Rope project settings
 .ropeproject
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
 
 # mkdocs documentation
 /site
@@ -118,6 +143,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -136,13 +167,24 @@ dmypy.json
 
 # Translations
 
+# Django stuff:
+
+# Flask stuff:
+
 # Scrapy stuff:
 
 # Sphinx documentation
 
 # PyBuilder
 
+# Jupyter Notebook
+
+# IPython
+
 # pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -150,15 +192,17 @@ dmypy.json
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
 
-# celery beat schedule file
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+
+# Celery stuff
 
 # SageMath parsed files
+
+# Environments
 
 # Spyder project settings
 
 # Rope project settings
-
-# Mr Developer
 
 # mkdocs documentation
 
@@ -166,16 +210,25 @@ dmypy.json
 
 # Pyre type checker
 
+# pytype static type analyzer
+
+# Cython debug symbols
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -203,4 +256,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/python,django,windows,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/python,windows,visualstudiocode,django

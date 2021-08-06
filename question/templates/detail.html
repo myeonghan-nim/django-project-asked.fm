@@ -1,32 +1,23 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
   <div class="jumbotron m-5">
-
     <p class="lead">{{question.content}}</p>
-
     <hr class="my-4">
-
-    <form action="{% url 'questions:answer_create' question.id %}" class="m-3" method="POST">
+    <form action="{% url 'question:answer_create' question.id %}" class="m-3" method="POST">
       {% csrf_token %}
       <input type="text" class="form-control m-1" name="content">
       <input type="submit" class="btn btn-primary m-1">
     </form>
-
     {% if question.answer_set.all %}
       {% for answer in question.answer_set.all %}
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-secondary" role="alert">
           {{answer.content}}
-          <a href="{% url 'questions:answer_delete' question.id answer.id %}" class="btn btn-danger mx-1">Delete</a>
+          <a href="{% url 'question:answer_delete' question.id answer.id %}" class="btn btn-danger mx-3">Delete</a>
         </div>
       {% endfor %}
     {% else %}
-      <div class="alert alert-danger" role="alert">
-        No replies.
-      </div>
+      <div class="alert alert-danger" role="alert">No replies.</div>
     {% endif %}
-
   </div>
-
 {% endblock %}

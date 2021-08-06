@@ -1,7 +1,5 @@
-# README
+# Clone Project: asked.fm
 
-## Using bootstrap examples
+## Bootstrap
 
-- AWESOME examples in bootstrap!
-
-> https://getbootstrap.com/docs/4.3/examples/
+link: [bootstrap](https://getbootstrap.com/docs/4.3/examples/)

@@ -2,4 +2,4 @@
 
 ## Bootstrap
 
-link: [bootstrap](https://getbootstrap.com/docs/4.3/examples/)
+[bootstrap](https://getbootstrap.com/docs/4.3/examples/)

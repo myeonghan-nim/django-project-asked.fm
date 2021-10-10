@@ -1,4 +1,4 @@
-# Clone Project: asked.fm
+# Project: asked.fm
 
 ## Bootstrap
 
